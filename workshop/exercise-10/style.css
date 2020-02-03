@@ -4,23 +4,49 @@ body {
 
 .container {
     display: grid;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
 .nav {
+    grid-area: nav;
+    /* grid-area: 1 / 1 / span 4 / span 1; */
     height: 50px;
     background-color: rebeccapurple;
 }
 
 .aside {
+    grid-area: aside;
+    display: none;
+    /* grid-area: 2 / 1 / span 1 / span 3; */
     background-color: forestgreen;
 }
 
 .main {
-
+    grid-area: main;
+    /* grid-area: 2 / 2 / span 2 / span 3; */
+    text-align: center;
 }
 
 .footer {
+    grid-area: footer;
+    /* grid-area: 4 / 2 / span 1 / span 3; */
     height: 100px;
     background-color: midnightblue;
+}
+
+@media (min-width: 768px) {
+    .aside {
+        display: block;
+    }
+    .container {
+        grid-template-areas:
+            'nav nav nav'
+            'aside main main'
+            'aside footer footer';
+    }
 }

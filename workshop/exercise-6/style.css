@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: "poppins";
+    text-align: center;
+}
+
+.boxed{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+.text{
+    display:flex;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: large;
+}
+
+.bottom{
+    margin-top: 20px;
+}
+.link{
+    text-decoration: none;
+}
+
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link::after {
+    content: '>';
+    color:  #0070c9;
+    /* Not sure how to change the color of this to match the color once the 
+    link is visited.  Could have used the # code in the html doc to have the
+    > be a part of the anchor content.  Solution: JS? */
+}
