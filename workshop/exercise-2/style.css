@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "poppins";
+    }
+    
+    .container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    }
+    
+    
+    .content{
+        display: flex;
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bar{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }

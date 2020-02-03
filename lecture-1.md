@@ -115,6 +115,9 @@ Media queries can be used to check many things, such as:
 
 [Try it](https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_ex1)
 
+For mobile to desktop use min-width and go fromn smaller to larger widths.
+For desktop to mobile use max-width and go freom larger to smaller widths.
+
 ---
 
 # Advanced topics

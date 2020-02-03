@@ -1,3 +1,39 @@
+@keyframes sliderighttoleft {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+@keyframes spinbounce {
+  from {
+      transform: scale(1) rotate(0deg);
+  }
+
+  40% {
+      transform: scale(1.1) rotate(180deg);
+  }
+
+  80% {
+      transform: scale(1.3) rotate(360deg);
+  }
+
+  90% {
+      transform: scale(0.8) rotate(360deg);
+  }
+
+  to {
+      transform: scale(1) rotate(360deg);
+  }
+}
+
+
 body {
   margin: 0;
 }
@@ -10,7 +46,30 @@ body {
 }
 
 .fast {
+  animation: sliderighttoleft 1s ease-in-out;
 }
 
 .cool {
+  font-size: large;
+  text-transform: uppercase;
+  padding: 15px;
+  box-shadow: 0px 2px 12px 2px gray; /* top right bottom left */
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0, 145, 255);
 }
+.cool:hover{
+  cursor: pointer; 
+}
+
+.cool:active{
+  animation: spinbounce 1s ease-in-out;
+}
+
+/*
+This was my original attempt lol
+.cool:active{
+  transform: rotate(360deg) scale(1.2);
+  transition-duration: 500ms;
+}
+  */

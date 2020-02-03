@@ -1,0 +1,32 @@
+body {
+margin: 0;
+text-align: center;
+font-family: "poppins";
+}
+
+.container{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.content{
+    display: flex;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.navbar{
+background-color: rgb(49, 49, 49);
+color: white;
+height: 25px;
+}
+
+.footbar{
+background-color: rgb(49, 49, 49);
+color: white;
+height: 25px;
+}
